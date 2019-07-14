@@ -13,10 +13,20 @@ public class LinkedListSample {
 	}
 	
 	void printLinkedList() {
-		while (head!=null) {
-			System.out.println(head.data);
-			head=head.next;
+		Node tmpHead= head;
+		while (tmpHead!=null) {
+			System.out.print(tmpHead.data);
+			System.out.print(" ");
+			tmpHead=tmpHead.next;
 		}
+	}
+	
+	// Inserting at the start of the linked list
+	void pushAtStart(Object data) {
+		Node newNode = new Node(data);
+			 newNode.next=head;
+			 head=newNode;
+		
 	}
 	
 	public static void main(String[] args) {
@@ -30,6 +40,17 @@ public class LinkedListSample {
 		fNode.next=sNode;
 		sNode.next=tNode;
 		
+		
+		
+		
+		System.out.println("Printing before insertion");
 		linkedList.printLinkedList();
+		
+		linkedList.pushAtStart("B");
+		
+		System.out.println("\nPrinting after insertion");
+		
+		linkedList.printLinkedList();
+		
 	}
 }
