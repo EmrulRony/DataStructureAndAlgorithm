@@ -25,19 +25,10 @@ class LinkedListPrinter {
 		Node tmpHead = new Node();
 		tmpHead = LinkedList.head;
 		while (tmpHead != null) {
-			System.out.print(tmpHead.data);
-			System.out.print(" ");
+			System.out.print(tmpHead.data+" ");
 			tmpHead = tmpHead.next;
 		}
-	}
-}
-
-// Class for inserting into the linked list
-class InsertIntoLinkedList {
-	static void insertAtTheStart(Object object) {
-		Node newNode = new Node(object);
-		newNode.next = LinkedList.head;
-		LinkedList.head = newNode;
+		System.out.println(" ");
 	}
 }
 
@@ -57,9 +48,31 @@ public class LinkedListMain {
 		// Printing datas of nodes
 		System.out.println("The values of the default Linked List");
 		LinkedListPrinter.printMyList();
+		
+		
 		//Inserting a new element into linked list(Begining)
 		System.out.println("Inserting new element at the start");
 		InsertIntoLinkedList.insertAtTheStart("X");
+		LinkedListPrinter.printMyList();
+		
+		//Inserting a new element after a given node
+		System.out.println("Inserting new element after a given node");
+		InsertIntoLinkedList.insertAfterGivenNode(forthNode, 100);
+		LinkedListPrinter.printMyList();
+		
+		//Inserting a new node at the end of the linked list
+		System.out.println("Inserting a new node at the end of the linked list");
+		InsertIntoLinkedList.insertAtTheEnd("###");
+		LinkedListPrinter.printMyList();
+		
+		// Deleting nodes from LinkedList by given value
+		System.out.println("Deleting a node by given value");
+		DeleteFromList.deleteByValue("###");
+		LinkedListPrinter.printMyList();
+		
+		// Deleting node from LinkedList by given 
+		System.out.println("Deleting a node by given index number");
+		DeleteFromList.deleteByIndexNo(1);
 		LinkedListPrinter.printMyList();
 	}
 }
