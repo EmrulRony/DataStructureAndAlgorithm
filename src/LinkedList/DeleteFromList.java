@@ -13,7 +13,7 @@ class DeleteFromList{
 		
 		else if (head.next!=null & head.data==object) {
 			
-			LinkedList.head=head.next;
+			head=head.next;
 			return;
 		}
 		
@@ -25,7 +25,6 @@ class DeleteFromList{
 			head=pointer;
 			pointer=pointer.next;
 		}
-
 	}
 	
 	static void deleteByIndexNo(int index) {
@@ -33,7 +32,7 @@ class DeleteFromList{
 		Node pointer = head.next;
 		
 		if (head.next!=null & index==0) {
-			head=head.next;
+			LinkedList.head=pointer;
 			return;
 		}
 		
@@ -42,10 +41,12 @@ class DeleteFromList{
 		while(pointer!=null) {
 			if (counter==index) {
 				head.next=pointer.next;
+				System.out.println("--"+LinkedList.head.data);
 				return;
 			}
 			head=pointer;
 			pointer=pointer.next;
+			
 			counter++;
 		}
 		

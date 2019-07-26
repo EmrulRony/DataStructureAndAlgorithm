@@ -22,8 +22,7 @@ class Node {
 // Class for printing linked list
 class LinkedListPrinter {
 	static void printMyList() {
-		Node tmpHead = new Node();
-		tmpHead = LinkedList.head;
+		Node tmpHead = LinkedList.head;
 		while (tmpHead != null) {
 			System.out.print(tmpHead.data+" ");
 			tmpHead = tmpHead.next;
@@ -67,12 +66,19 @@ public class LinkedListMain {
 		
 		// Deleting nodes from LinkedList by given value
 		System.out.println("Deleting a node by given value");
-		DeleteFromList.deleteByValue("###");
+		DeleteFromList.deleteByValue("X");
 		LinkedListPrinter.printMyList();
 		
 		// Deleting node from LinkedList by given 
 		System.out.println("Deleting a node by given index number");
-		DeleteFromList.deleteByIndexNo(1);
+		DeleteFromList.deleteByIndexNo(0);
 		LinkedListPrinter.printMyList();
+		
+		// Printing the length of a linked list
+		System.out.println("The length of the linked list is.."+LengthOfList.length());
+		
+		// Getting the value of a node by given index
+		System.out.println("The value for index 2 is : "+GetValueByIndex.getValue(2));
+		
 	}
 }
