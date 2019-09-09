@@ -78,7 +78,7 @@ public class LinkedListMain {
 		System.out.println("The length of the linked list is.."+LengthOfList.length());
 		
 		// Getting the value of a node by given index
-		System.out.println("The value for index 2 is : "+GetValueByIndex.getValue(2));
+		System.out.println("The value for index 2 is : "+GetValueByIndex.getValue(0));
 		
 	}
 }
