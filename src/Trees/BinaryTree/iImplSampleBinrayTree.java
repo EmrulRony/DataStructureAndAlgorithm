@@ -14,7 +14,7 @@
 package Trees.BinaryTree;
 
 
-class BinaryTree {
+class iBinaryTree {
 	
 	static class Node {
 		int key;
@@ -31,21 +31,21 @@ class BinaryTree {
 	
 	public Node root;
 
-	BinaryTree() {
+	iBinaryTree() {
 		root = null;
 	}
 
-	BinaryTree(int key) {
+	iBinaryTree(int key) {
 		root = new Node(key);
 	}
 }
 
 public class iImplSampleBinrayTree {
 	public static void main(String[] args) {
-		BinaryTree btree = new BinaryTree(1);
-		btree.root.left=new BinaryTree.Node(2);
-		btree.root.right=new BinaryTree.Node(3);
-		btree.root.left.left=new BinaryTree.Node(4);
+		iBinaryTree btree = new iBinaryTree(1);
+		btree.root.left=new iBinaryTree.Node(2);
+		btree.root.right=new iBinaryTree.Node(3);
+		btree.root.left.left=new iBinaryTree.Node(4);
 		System.out.println(btree.root.left.left.key);
 	}
 }
