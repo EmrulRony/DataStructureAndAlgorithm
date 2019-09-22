@@ -110,7 +110,7 @@ public class BinaryTree {
 		return false;
 	}
 
-	// Find Left and Right most note using recursion
+	// Find Left and Right most node using recursion
 	public Node findRightMostNode(Node root) {
 		if (root == null) {
 			return null;
