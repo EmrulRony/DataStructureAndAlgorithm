@@ -1,11 +1,22 @@
 package Sorting;
 
 public class QuickSort{
-    public static int[] quickSort(int arr[],int left,int right){
+	
+	public static int[] quickSort(int arr[], int left, int right) {
+		if (left>=right) {
+			return arr;
+		}
+		int partitionPoint = partition(arr, left, right);
+		quickSort(arr, left, partitionPoint-1);
+		quickSort(arr, partitionPoint+1, right);
+		return arr;
+	}
+    public static int partition(int arr[],int left,int right){
+    	int pvot=arr[right];
         int p=left-1;
         int i;
-        for( i=0;i<right;i++){
-            if(arr[i]<arr[right]){
+        for( i=left;i<right;i++){
+            if(arr[i]<pvot){
                 p++;
                 int temp=arr[p];
                 arr[p]=arr[i];
@@ -16,14 +27,14 @@ public class QuickSort{
         arr[p+1]=arr[right];
         arr[right]=temp;
         
-        return arr;
+        return p+1;
     }
     public static void main(String[] args) {
-        int arr[]={6,3,8,4,7,5};
+        int arr[]={10, 7, 8, 9, 1, 5};
         int arrRet[]=QuickSort.quickSort(arr,0,arr.length-1);
 
         for(int i=0;i<arrRet.length;i++){
-            System.out.println(arrRet[i]);
+            System.out.print(arrRet[i]+" ");
         }
     }
 }
