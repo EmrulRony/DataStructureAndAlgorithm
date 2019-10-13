@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
+// Problem 1: Find repeated characters in a sentence
+// Problem 2: Find repeated words in a String
+
 public class FindRepeatedWordInString {
 	
 	// This method counts num of times a char occurs in a string
