@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ComparatorDemo",
+            "request": "launch",
+            "mainClass": "CollectionFramework.Comparator.ComparatorDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainClass",
+            "request": "launch",
+            "mainClass": "CollectionFramework.ComparableAndComparator.MainClass",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TreeSetDemo",
+            "request": "launch",
+            "mainClass": "CollectionFramework.SortedSet.TreeSetDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HashMapDemo",
+            "request": "launch",
+            "mainClass": "Other.HashMapDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SynchronizedThreadDemo",
+            "request": "launch",
+            "mainClass": "Other.SynchronizedThreadDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ThreadDemo",
+            "request": "launch",
+            "mainClass": "Other.ThreadDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HashSetDemo",
+            "request": "launch",
+            "mainClass": "LinkedList.HashSetDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenericDemo",
+            "request": "launch",
+            "mainClass": "Other.GenericDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Six_AddLsdMsd",
+            "request": "launch",
+            "mainClass": "Subin52Problems.Six_AddLsdMsd",
+            "projectName": "DataStructureAndAlgorithms"
+        }
+    ]
+}
