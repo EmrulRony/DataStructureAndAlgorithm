@@ -2,6 +2,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SortingAlgos",
+            "request": "launch",
+            "mainClass": "Other.SortingAlgos",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ForEach",
+            "request": "launch",
+            "mainClass": "CollectionFramework.ForEach",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LeetCode",
+            "request": "launch",
+            "mainClass": "Other.LeetCode",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchAlgo",
+            "request": "launch",
+            "mainClass": "Other.SearchAlgo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinearSearch",
+            "request": "launch",
+            "mainClass": "Other.LinearSearch",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinearSearch",
+            "request": "launch",
+            "mainClass": "Searching.LinearSearch",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ComparableDemo",
+            "request": "launch",
+            "mainClass": "CollectionFramework.Comparable.ComparableDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_One_Sol_Java_Seven",
+            "request": "launch",
+            "mainClass": "Other.Ex_One_Sol_Java_Seven",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TernaryDemo",
+            "request": "launch",
+            "mainClass": "Other.TernaryDemo",
+            "projectName": "DataStructureAndAlgorithms"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ComparatorDemo",
             "request": "launch",
             "mainClass": "CollectionFramework.Comparator.ComparatorDemo",

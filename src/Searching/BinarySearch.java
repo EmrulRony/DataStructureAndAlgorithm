@@ -32,7 +32,5 @@ public class BinarySearch {
 		else {
 			System.out.println("Number found at indes:  "+res);
 		}
-
 	}
-
 }

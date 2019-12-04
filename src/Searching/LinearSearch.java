@@ -19,11 +19,8 @@ public class LinearSearch {
 		System.out.println("Enter a number");
 		Scanner sc=new Scanner(System.in);
 		int number=Integer.parseInt(sc.nextLine());
-		
 		int arr[]= {2,8,12,1,29};
-		
 		MyClass.searchMet(arr, number);
 	}
-
 }
 // Time complexity of this algorithm is O(n)
